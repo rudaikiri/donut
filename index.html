@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blissful Glaze</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <div>
+        <nav class="navbar">
+            <img class="logo" src="/images/blissfulglaze2.png">
+            <ul class="nav_links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ORDER NOW</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-btn" href="#"><i class="fa fa-bars"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">ABOUT</a>
+                        <a href="#">STORE LIST</a>
+                        <a href="#">LEARN MORE</a>
+                        <a href="#">CONTACT US</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- HEROPAGE -->
+    <div class="hero">
+        <video class="video" autoplay loop muted plays-inline>
+            <source src="/images/glaze.mp4" type="video/mp4">
+        </video>
+        <h1 class="title">INDULGE IN IRRESISTIBLE DONUTS</h1>
+    </div>
+    <!-- ABOUT -->
+        <div class="about" id="about">
+                <div class="about3">
+                    <img src="/images/glazed_donut.png">
+                    <h1>Taste the <br>  <span class="magic"> MAGIC</span><br>  Where Donuts Sparkle with Joy!<br>
+                    <small class="description">Discover a world of blissful indulgence with Blissful Glaze,<Br> where heavenly donuts redefine sweetness and delight.</small><div class="buttons">
+                        <button class="button" href="#">Order Now</button>
+                    </div>
+                    </h1>
+                </div>
+        </div>
+    <!-- NEW SECTION  -->
+        <div class="section2" id="section2">
+            <h1 class="founder">PROUDLY <br> MADE BY PASTRY CHEFS</h1>
+            <div class="buttons2">
+                <button class="button2">Contact Us</button>
+            <div class="section3">
+                <img class="dozen" src="/images/dozen.jpg" alt="dozen">
+            </div>
+    </div>
+    <!-- CATALOG -->
+    <div class="wrapper">
+        <div class="donut1">
+            <a href="#"><img class="chocolate" src="images/donut1.png"></a>
+            <h3>CHOCOLATE</h3>
+        </div>
+        <div class="donut2">
+            <a href="#"><img class="strawberry" src="images/strawberry-sprinkles.png"></a>
+            <h3>STRAWBERRY</h3>
+        </div>
+        <div class="donut3">
+            <a href="#"><img class="choconut" src="images/donut3.png"></a>
+            <h3>CHOCONUT</h3>
+        </div>
+        <div class="donut4">
+            <a href="#"><img class="sansrival" src="images/donut4.png"></a>
+            <h3>SANS</h3>
+        </div>
+        <div class="donut5">
+            <a href="#"><img class="vanilla" src="images/vanilla.png"></a>
+            <h3>VANILLA</h3>
+        </div>
+    </div>
+
+<footer>    
+    <div class="items">
+        <img src="images/blissfulglaze.png" alt="Blissful Glaze" class="logo2">
+        <div class="help">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">LEARN MORE</a></li>
+            </ul>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="second">
+            <ul>
+                <li><a href="#">ORDER NOW</a></li>
+                <li><a href="#">STORE LIST</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+
+        <script>
+            const dropdownBtn = document.querySelector('.dropdown-btn');
+            const dropdownContent = document.querySelector('.dropdown-content');
+    
+            dropdownBtn.addEventListener('click', () => {
+                dropdownContent.classList.toggle('show');
+            });
+
+            dropdownContent.addEventListener('mouseleave', () => {
+            hideDropdownTimeout = setTimeout(() => {
+                dropdownContent.classList.remove('show');
+            }, 10000);
+        });
+        </script>
+</footer>
+</body>
+</html>
